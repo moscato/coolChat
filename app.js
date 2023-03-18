@@ -12,20 +12,14 @@ app.use(express.static('./public'));
 // fire controllers
 todoController(app);
 
+// redirect root URL to '/todo'
+app.get('/', function(req, res) {
+    res.redirect('/todo');
+  });
 
 // listen to port
 const PORT = process.env.PORT || 3000;
 app.listen(PORT);
 
 console.log(`Listening at port: ${PORT}`);
-
-
-
-
-
-
-
-
-
-
 
