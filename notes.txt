@@ -1,0 +1,16 @@
+MVC ~ Model View Controller
+
+MODEL:
+    data - E.G:
+      - todos
+      - users
+VIEW:
+    Template Files - E.G:
+      - todo.ejs
+      - account.ejs
+MODEL:
+    Controls the app sections - E.G:
+      - todoController
+      - userController
+
+
